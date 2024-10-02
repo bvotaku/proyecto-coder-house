@@ -1,0 +1,53 @@
+// estilos para main //
+
+@mixin main{
+    background-color: $color-secundario;
+    color: aliceblue;
+    text-align: center;
+}
+
+@mixin container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+}
+
+@mixin item{
+    grid-column: span 2;
+}
+
+ @mixin imagen ($width, $height){
+    width: $width;
+    height: $height;
+ }
+
+ // estilos footer//
+
+@mixin footer{
+    background-color: $color-principal;
+    text-align: center;
+    color: $color-titulos;
+}
+
+@mixin pie-de-pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+@mixin redes{
+    width: 10%;
+}
+
+// media queries //
+
+@mixin media{
+    @media (min-width:800px) {
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 50%);
+        }
+    }
+}

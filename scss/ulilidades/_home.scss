@@ -1,0 +1,61 @@
+// estilos header // 
+@import "../ulilidades/variables";
+@import "../ulilidades/mixin";
+
+
+header{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        nav{
+
+            ul{
+                padding-right: 150px;
+                display: flex;
+                list-style: none;
+                gap: 20px;
+            }
+        }
+        
+    }
+
+    .logo{
+        width: 10%;
+    }
+
+    a{
+        color: $color-titulos;
+    }
+
+// estilos main //
+
+main{
+    @include main
+}
+
+.container {
+    @include container
+}
+
+.item{
+    @include item
+}
+
+.imagenes{
+    @include imagen (50%, 70%);
+}
+
+//estilos footer//
+
+footer{
+    @include footer
+}
+
+.pie-de-pagina{
+    @include pie-de-pagina
+}
+
+.redes{
+    @include redes
+}
