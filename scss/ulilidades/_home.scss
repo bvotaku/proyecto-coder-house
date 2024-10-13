@@ -3,48 +3,30 @@
 @import "../ulilidades/mixin";
 
 
-header{
-    background-color: $color-principal;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-        nav{
-
-            ul{
-                padding-right: 150px;
-                display: flex;
-                list-style: none;
-                gap: 20px;
-            }
-        }
-        
-    }
 
     .logo{
-        width: 10%;
+        width: 12%;
     }
-
-    a{
-        color: $color-titulos;
-    }
-
 // estilos main //
 
 main{
     @include main
 }
 
-.container {
-    @include container
-}
-
-.item{
-    @include item
+.container{
+    @include section
 }
 
 .imagenes{
-    @include imagen (50%, 70%);
+    @include imagen (70%, 70%);
 }
+
+// estilos de section de main//
+
+.videos{
+    @include section
+}
+
 
 //estilos footer//
 
